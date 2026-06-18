@@ -98,7 +98,7 @@ export default function WhatIsBotleague() {
 
             {/* Render User Blueprint Image */}
             <img 
-              src="/images/blueprint.png" 
+              src={`${import.meta.env.BASE_URL}images/blueprint.png`} 
               alt="Botleague blueprint schematic" 
               className="w-full max-w-[280px] h-auto object-contain z-10 transition-transform duration-500 hover:scale-105 filter drop-shadow-[0_0_15px_rgba(0,240,255,0.25)]"
             />

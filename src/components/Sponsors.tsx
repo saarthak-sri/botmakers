@@ -39,7 +39,7 @@ export default function Sponsors() {
             <div key={sp.name} className="flex flex-col items-center gap-3 group cursor-pointer">
               <div className="h-16 flex items-center justify-center filter grayscale contrast-125 brightness-75 hover:grayscale-0 hover:brightness-100 hover:contrast-100 transition-all duration-300">
                 <img 
-                  src={sp.logo} 
+                  src={`${import.meta.env.BASE_URL}${sp.logo.startsWith('/') ? sp.logo.slice(1) : sp.logo}`} 
                   alt={sp.name} 
                   className="max-h-12 max-w-[120px] object-contain"
                   loading="lazy"

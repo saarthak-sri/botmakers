@@ -11,7 +11,7 @@ export default function Hero({ onExploreEvents }: HeroProps) {
       {/* Background Image with Dark Vignette Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center transition-transform duration-10000 ease-out hover:scale-105"
-        style={{ backgroundImage: `url('/images/hero_combat.png')` }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/hero_combat.png')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/70 to-[#030303]/90" />
       <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/30 to-[#030303] pointer-events-none" />

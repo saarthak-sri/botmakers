@@ -74,7 +74,7 @@ export default function Disciplines() {
             >
               {/* Discipline Background Image */}
               <img 
-                src={item.image} 
+                src={`${import.meta.env.BASE_URL}${item.image.startsWith('/') ? item.image.slice(1) : item.image}`} 
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
